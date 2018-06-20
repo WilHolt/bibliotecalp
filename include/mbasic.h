@@ -7,10 +7,23 @@ namespace mbasic{
 
   class MathBasic{
   public:
-     static int add(int v1, int v2);
-     static int dif(int v1, int v2); 
-     static int mux(int v1, int v2);
-     static int div(int v1, int v2);
+  	template<typename T>
+     static T add(T a, T b){
+        return a + b;
+    }
+ 	template<typename T>    
+     static T dif(T a, T b){
+        return a - b;
+    }
+    template<typename T>  
+     static T mux(T a, T b){
+        return a * b;
+    }
+
+ 	template<typename T>    
+     static T div(T a, T b){
+        return a / b;
+    }
   };
 }
   #endif
